@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(120deg, #6190E8, #A7BFE8);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    padding: 5px;
+}
+
+.logo {
+    padding: 7px;
+    cursor: default;
+}
+
+.navigation ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 7px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 8px
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: #F4B151;
+}
+
+.register {
+    padding: 7px;
+}
+
+.register :is(.signin-btn) {
+    padding: 4px;
+    border: none;
+    border-radius: 13px;
+    background-color: #D6CCC2;
+    box-shadow: 0px 1px 11px 0px grey;
+    width: 6vw;
+    font-size: 14px;
+}
+
+.register :is(.signin-btn):hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.hero {
+    border: 1px solid black;
+    height: 50vh;
+    background-image: url(/img/law.jpg);
+    background-position: center center;
+}
+
+.hero :is(h2) {
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 167px;
+    font-size: 2.2rem;
+}
+
+.hero :is(p) {
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 167px;
+    font-size: 1.1rem;
+}
+
+.consultant-btn :is(button) {
+    height: 6vh;
+    width: 13vw;
+    color: white;
+    background: linear-gradient(45deg, black, transparent);
+    position: absolute;
+    top: 296px;
+    left: 156px;
+    cursor: pointer;
+}
+
+.our-services {
+    display: flex;
+    justify-content: space-around;
+}
+
+.services-img {
+    height: 40vh;
+    width: 18vw;
+    border-left: 5px solid #FFCB74;
+    border-top: 5px solid #FFCB74;
+    border-bottom: 5px solid #FFCB74;
+}
+
+.services-img img {
+    height: 250px;
+    width: 221px;
+    position: relative;
+    top: 16px;
+    left: 15px;
+}
+
+.services-details :is(h2) {
+    font-size: 2.2rem;
+}
+
+.services-details :is(p) {
+    font-size: 1.2rem;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.learn-more button {
+    border: 1px solid black;
+    padding: 8px;
+    box-shadow: 4px 2px 7px 0px grey;
+    cursor: pointer;
+    background: linear-gradient(90deg, #9fbae8, transparent);
+}
+
+.contact :is(h2) {
+    font-size: 2.2rem;
+    margin: 12px;
+    position: relative;
+    top: 0;
+    left: 150px;
+}
+
+.contact-container :is(input, textarea) {
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 3px;
+    margin: 2px;
+    color: black;
+    background: linear-gradient(90deg, #9fbae8, transparent);
+    position: relative;
+    left: 150px;
+}
+
+.contact-container :is(input, textarea)::placeholder {
+    color: rgb(36, 35, 35);
+}
+
+.contact-btn {
+    border: 1px solid black;
+    padding: 8px;
+    box-shadow: 4px 2px 7px 0px grey;
+    cursor: pointer;
+    background: linear-gradient(90deg, #9fbae8, transparent);
+    border-radius: 5px;
+    position: relative;
+    left: 150px;
+    transition: all ease-in-out .3s;
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.phone-num {
+    border: 2px solid black;
+    width: 37px;
+    padding: 6px;
+}
+
+.phone-num :is(img) {
+    height: 35px;
+    width: 35px;
+}
