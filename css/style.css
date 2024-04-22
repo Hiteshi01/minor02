@@ -1,187 +1,138 @@
-* {
-    padding: 0;
+ /* Custom styles */
+ nav {
+     background-color:#f6af35;
+ }
+
+ nav .brand-logo {
+     margin-left: 20px;
+ }
+
+ nav ul {
+     margin: 0;
+ }
+
+ nav ul li {
+     margin-right: 10px;
+ }
+
+ .btn-login,
+ .btn-signin {
+     margin: 0 10px;
+ }
+
+ @media (max-width: 992px) {
+     nav .brand-logo {
+         margin-left: 10px;
+     }
+
+     .btn-login,
+     .btn-signin {
+         margin: 5px;
+     }
+ }
+
+ /* law firm code */
+
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #f4f4f4;
+     color: #333;
+ }
+
+ header {
+     background-color: #f99523;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+ }
+
+ .container {
+     max-width: 960px;
+     margin: 20px auto;
+     padding: 0 20px;
+ }
+
+ /* carousel code start from here */
+
+ .carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-slide {
+    display: none;
+    width: 100%;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Show the first slide initially */
+  .carousel-slide:first-child {
+    display: block;
+  }
+  
+  /* Apply transition effect */
+  .carousel-slide {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Hide scrollbar */
+  body {
     margin: 0;
     overflow-x: hidden;
-}
+  }
+  
+  /* Add responsive styles */
+  @media screen and (max-width: 768px) {
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
 
-body {
-    background: linear-gradient(120deg, #6190E8, #A7BFE8);
-}
+ /* carousel code end from here */
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    /* border: 2px solid red; */
-    padding: 5px;
-}
+ .services {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
 
-.logo {
-    padding: 7px;
-    cursor: default;
-}
+ .service {
+     width: 300px;
+     margin: 20px;
+     padding: 20px;
+     background-color: #fff;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     text-align: center;
+ }
 
-.navigation ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 7px;
-}
+ .service p {
+     color: #666;
+ }
 
-.navigation ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    padding: 8px
-}
+ .testimonials {
+     margin-top: 50px;
+     text-align: center;
+ }
 
-.navigation ul li a:hover {
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    text-decoration-color: #F4B151;
-}
+ .testimonial {
+     margin-bottom: 20px;
+ }
 
-.register {
-    padding: 7px;
-}
+ .contact-form {
+     margin-top: 50px;
+ }
 
-.register :is(.signin-btn) {
-    padding: 4px;
-    border: none;
-    border-radius: 13px;
-    background-color: #D6CCC2;
-    box-shadow: 0px 1px 11px 0px grey;
-    width: 6vw;
-    font-size: 14px;
-}
-
-.register :is(.signin-btn):hover {
-    scale: 1.2;
-    cursor: pointer;
-}
-
-.hero {
-    border: 1px solid black;
-    height: 50vh;
-    background-image: url(/img/law.jpg);
-    background-position: center center;
-}
-
-.hero :is(h2) {
-    color: white;
-    position: relative;
-    top: 70px;
-    left: 167px;
-    font-size: 2.2rem;
-}
-
-.hero :is(p) {
-    color: white;
-    position: relative;
-    top: 70px;
-    left: 167px;
-    font-size: 1.1rem;
-}
-
-.consultant-btn :is(button) {
-    height: 6vh;
-    width: 13vw;
-    color: white;
-    background: linear-gradient(45deg, black, transparent);
-    position: absolute;
-    top: 296px;
-    left: 156px;
-    cursor: pointer;
-}
-
-.our-services {
-    display: flex;
-    justify-content: space-around;
-}
-
-.services-img {
-    height: 40vh;
-    width: 18vw;
-    border-left: 5px solid #FFCB74;
-    border-top: 5px solid #FFCB74;
-    border-bottom: 5px solid #FFCB74;
-}
-
-.services-img img {
-    height: 250px;
-    width: 221px;
-    position: relative;
-    top: 16px;
-    left: 15px;
-}
-
-.services-details :is(h2) {
-    font-size: 2.2rem;
-}
-
-.services-details :is(p) {
-    font-size: 1.2rem;
-}
-
-.services-list {
-    display: flex;
-    justify-content: space-around;
-}
-
-.learn-more button {
-    border: 1px solid black;
-    padding: 8px;
-    box-shadow: 4px 2px 7px 0px grey;
-    cursor: pointer;
-    background: linear-gradient(90deg, #9fbae8, transparent);
-}
-
-.contact :is(h2) {
-    font-size: 2.2rem;
-    margin: 12px;
-    position: relative;
-    top: 0;
-    left: 150px;
-}
-
-.contact-container :is(input, textarea) {
-    font-size: 1rem;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 3px;
-    margin: 2px;
-    color: black;
-    background: linear-gradient(90deg, #9fbae8, transparent);
-    position: relative;
-    left: 150px;
-}
-
-.contact-container :is(input, textarea)::placeholder {
-    color: rgb(36, 35, 35);
-}
-
-.contact-btn {
-    border: 1px solid black;
-    padding: 8px;
-    box-shadow: 4px 2px 7px 0px grey;
-    cursor: pointer;
-    background: linear-gradient(90deg, #9fbae8, transparent);
-    border-radius: 5px;
-    position: relative;
-    left: 150px;
-    transition: all ease-in-out .3s;
-}
-
-.contact-btn:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.phone-num {
-    border: 2px solid black;
-    width: 37px;
-    padding: 6px;
-}
-
-.phone-num :is(img) {
-    height: 35px;
-    width: 35px;
-}
+ footer {
+     background-color: #333;
+     color: #fff;
+     text-align: center;
+     padding: 20px 0;
+ }

@@ -3,101 +3,148 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/style.css">
         <title>Law Firm</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-        <div class="container">
-            <div class="logo">logo</div>
-            <div class="navigation">
-                <ul>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Logo</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Case Study</a></li>
-                    <li><a href="#">Blogs</a></li>
+                    <li><a href="/html/main.html">Enquiry</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li><a class="waves-effect waves-light btn btn-signin" href="/html/login.html">Sign
+                            In</a></li>
                 </ul>
             </div>
-            <div class="register">
-                <button class="signin-btn">Sign in</button>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Case Study</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a class="waves-effect waves-light btn btn-signin">Sign
+                    In</a></li>
+            <li><a class="waves-effect waves-light btn btn-login">Login</a></li>
+        </ul>
+        <!-- law firm code -->
+
+        <header>
+            <h1>ABC Law Firm</h1>
+            <p>Your Trusted Legal Advisors</p>
+        </header>
+
+        <div class="container">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                  <img src="/img/4-Main-Types-of-Law.jpg" alt="Slide 1">
+                </div>
+                <div class="carousel-slide">
+                  <img src="/img/law1.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-slide">
+                  <img src="/img/Laws-Rights.jpg" alt="Slide 3">
+                </div>
+                <div class="carousel-slide">
+                  <img src="/img/services-law-img.jpg" alt="Slide 4">
+                </div>
+              </div>
+
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <i class="material-icons large">gavel</i>
+                    <h3>Legal Consultation</h3>
+                    <p>We provide expert legal consultation for various legal
+                        matters.</p>
+                </div>
+                <div class="service">
+                    <i class="material-icons large">account_balance</i>
+                    <h3>Legal Representation</h3>
+                    <p>Our experienced attorneys will represent you in court
+                        with dedication.</p>
+                </div>
+                <div class="service">
+                    <i class="material-icons large">assignment</i>
+                    <h3>Contract Drafting</h3>
+                    <p>Need a contract drafted? We've got you covered with our
+                        professional drafting services.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="hero">
-            <h2>Our Attorneys Always</h2>
-            <h2>Provide The Excellent</h2>
-            <h2>Service</h2>
-            <p>Terms of intelligent & Professional Attorneys of Lyza are always
-                prepared to</p>
-            <p> make you triumph. we always try our best to make our clients
-                happy.</p>
-            <div class="consultant-btn">
-                <button>Free Consultation</button>
-            </div>
-        </div>
-
-        <br>
-        <br>
-
-        <div class="our-services">
-            <div class="services-img">
-                <img src="/img/services-law-img.jpg" alt>
-            </div>
-            <div class="services-details">
-                <h2>We Provide Qualified</h2>
-                <h2>Attorneys For Yours Assistance</h2>
-                <p>The Whole Team of Lyza Law Firm brings a strong and
-                    fearless</p>
-                <p>attitude to all the clients they assist. And, to make sure
-                    that you</p>
-                <p>win our team will provide you with High-quality service.</p>
-                <br>
-                <div class="services-list">
-                    <ul>
-                        <li><img src="/img/tick.svg" alt>Browse Our Website</li>
-                        <li><img src="/img/tick.svg" alt>Choose Services</li>
-                    </ul>
-                    <ul>
-                        <li><img src="/img/tick.svg" alt>Quick Reply</li>
-                        <li><img src="/img/tick.svg" alt>Best Performances</li>
-                    </ul>
+            <div class="testimonials">
+                <h2>Testimonials</h2>
+                <div class="testimonial">
+                    <p>"ABC Law Firm helped me win a difficult case. Their expertise and dedication are unmatched. Highly recommended!"</p>
+                    <p>- John Doe</p>
                 </div>
-                <br>
-                <div class="learn-more">
-                    <button>Learn More</button>
+                <div class="testimonial">
+                    <p>"I'm grateful for the legal advice provided by ABC Law Firm. They guided me through the process and achieved a positive outcome."</p>
+                    <p>- Jane Smith</p>
                 </div>
             </div>
-        </div>
-        <br>
-        <br>
 
-        <div class="contact">
-            <h2>Contact us to get the best</h2>
-            <h2>legal help</h2>
-            <div class="contact-container">
-                <div class="names">
-                    <input type="text" name id placeholder="First Name">
-                    <input type="text" name id placeholder="Last Name">
-                </div>
-                <div class="contact-details">
-                    <input type="email" name id placeholder="Email">
-                    <input type="number" name id placeholder="Phone number">
-                </div>
-                <div class="textarea">
-                    <textarea name id cols="30" rows="10"
-                        placeholder="Enter your querry"></textarea>
-                </div>
-                <button class="contact-btn">Send</button>
-
-                <div class="contact-details">
-                    <p><b>Or get in touch with us via mean of</b></p>
-                    <p><b>communication listed below</b></p>
-                    <div class="phone-num">
-                        <img src="/img/telephone.png" alt="">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="input-field">
+                        <input id="name" type="text" class="validate">
+                        <label for="name">Name</label>
                     </div>
-                </div>
+                    <div class="input-field">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea id="message"
+                            class="materialize-textarea"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit"
+                        name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
             </div>
         </div>
 
+        <footer>
+            <p>&copy; 2024 ABC Law Firm. All rights reserved.</p>
+        </footer>
+
+        <script src="/js/script.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems);
+    });
+  </script>
+
+        <!-- navigation bar code -->
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
     </body>
 </html>
